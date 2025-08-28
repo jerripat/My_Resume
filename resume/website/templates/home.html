@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Resume — Gerald Patterson" />
+  <meta name="author" content="Gerald Patterson" />
+  <title>Gerald Patterson — Resume</title>
+
+  <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}" />
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,400i,700,800" rel="stylesheet" />
+
+  <!-- Font Awesome (free) -->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+  <!-- Your theme overrides -->
+  <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" aria-label="Sidebar navigation">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Gerald Patterson</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+             src="{% static 'assets/img/profile.jpg' %}"
+             alt="Portrait of Gerald Patterson" />
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container-fluid p-0">
+
+    <!-- About -->
+    <section class="resume-section" id="about">
+      <div class="resume-section-content">
+        <h1 class="mb-0">
+          Gerald
+          <span class="text-primary">Patterson</span>
+        </h1>
+        <div class="subheading mb-4">
+          Tulsa, OK · (918) 822-5937 ·
+          <a href="mailto:jerripatterson@gmail.com">jerripatterson@gmail.com</a>
+        </div>
+        <p class="lead mb-4">
+          Automotive sales leader turned software developer and UX-focused builder. After 40 years in the auto industry with a
+          90% closing ratio, I’m channeling that customer empathy into clean, accessible web apps, embedded/IoT tinkering, and
+          security-minded deployments on Ubuntu. I thrive at the intersection of people, product, and pragmatic engineering.
+        </p>
+        <div class="social-icons">
+          <a class="social-icon" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a class="social-icon" href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a class="social-icon" href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a class="social-icon" href="#" aria-label="Portfolio"><i class="fa-solid fa-globe"></i></a>
+        </div>
+      </div>
+    </section>
+    <hr class="m-0" />
+
+    <!-- Experience -->
+    <section class="resume-section" id="experience">
+      <div class="resume-section-content">
+        <h2 class="mb-5">Experience</h2>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h3 class="mb-0">Senior Automotive Sales & Finance</h3>
+            <div class="subheading mb-3">Multiple Dealerships</div>
+            <p>
+              Built trusted relationships, led teams, and consistently exceeded targets with a documented ~90% close rate.
+              Specialized in needs discovery, objection handling, and win-win negotiation — skills I now apply to product
+              discovery, UX interviews, and developer-stakeholder alignment.
+            </p>
+            <ul>
+              <li>Led CRM hygiene and data-driven follow-ups shaping deal pipelines.</li>
+              <li>Mentored reps on structured frameworks (SPIN, BANT) to improve outcomes.</li>
+              <li>Championed digital retailing workflows integrating finance and delivery.</li>
+            </ul>
+          </div>
+          <div class="flex-shrink-0"><span class="text-primary">— 40 years</span></div>
+        </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h3 class="mb-0">Software Developer (Independent)</h3>
+            <div class="subheading mb-3">Python · Django · Node · C# · Arduino/ESP32</div>
+            <p>
+              Ship small, learn fast: web apps, REST backends, and embedded sensor prototypes. Heavy Ubuntu usage with
+              Docker/Portainer, Nginx, and MongoDB/MySQL — plus a penchant for clean documentation and reproducible setups.
+            </p>
+            <ul>
+              <li>Built a Django resume/blog with image handling, slugs, and static assets.</li>
+              <li>Created Node/Express product admin with Pug/Handlebars and session auth.</li>
+              <li>Prototyped Arduino Uno/ESP32 projects (PIR, HC-SR04, RGB LED indicators).</li>
+            </ul>
+          </div>
+          <div class="flex-shrink-0"><span class="text-primary">2023 — Present</span></div>
+        </div>
+      </div>
+    </section>
+    <hr class="m-0" />
+
+    <!-- Education -->
+    <section class="resume-section" id="education">
+      <div class="resume-section-content">
+        <h2 class="mb-5">Education</h2>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+          <div class="flex-grow-1">
+            <h3 class="mb-0">DeVry University</h3>
+            <div class="subheading mb-2">Coursework toward Software Development</div>
+            <p>Focus: Python, Web Development, Networking & Security foundations (e.g., BYOD policy, NIST/CIS frameworks).</p>
+          </div>
+          <div class="flex-shrink-0"><span class="text-primary">Ongoing</span></div>
+        </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+          <div class="flex-grow-1">
+            <h3 class="mb-0">Self-Directed Study</h3>
+            <div class="subheading mb-2">Open-source, docs, and lab work</div>
+            <p>Ubuntu administration, Docker, systemd services, Nginx, MongoDB/MySQL, Arduino/ESP32, and C# with .NET CLI.</p>
+          </div>
+          <div class="flex-shrink-0"><span class="text-primary">Always</span></div>
+        </div>
+      </div>
+    </section>
+    <hr class="m-0" />
+
+    <!-- Skills -->
+    <section class="resume-section" id="skills">
+      <div class="resume-section-content">
+        <h2 class="mb-4">Skills</h2>
+
+        <div class="subheading mb-3">Programming Languages & Tools</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item" title="Python"><i class="fa-brands fa-python"></i></li>
+          <li class="list-inline-item" title="Django"><i class="fa-solid fa-leaf"></i></li>
+          <li class="list-inline-item" title="JavaScript"><i class="fa-brands fa-square-js"></i></li>
+          <li class="list-inline-item" title="Node.js"><i class="fa-brands fa-node-js"></i></li>
+          <li class="list-inline-item" title="React"><i class="fa-brands fa-react"></i></li>
+          <li class="list-inline-item" title="CSS3"><i class="fa-brands fa-css3-alt"></i></li>
+          <li class="list-inline-item" title="HTML5"><i class="fa-brands fa-html5"></i></li>
+          <li class="list-inline-item" title="C# / .NET"><i class="fa-solid fa-code"></i></li>
+          <li class="list-inline-item" title="Git"><i class="fa-brands fa-git-alt"></i></li>
+          <li class="list-inline-item" title="Docker"><i class="fa-brands fa-docker"></i></li>
+          <li class="list-inline-item" title="Linux/Ubuntu"><i class="fa-brands fa-ubuntu"></i></li>
+          <li class="list-inline-item" title="MongoDB"><i class="fa-solid fa-database"></i></li>
+        </ul>
+
+        <div class="subheading mb-3">Workflow</div>
+        <ul class="fa-ul mb-0">
+          <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Mobile-first, responsive design</li>
+          <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Git-based iteration & code reviews</li>
+          <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Dockerized dev/prod parity</li>
+          <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Security-minded configs & logging</li>
+          <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Agile habits: small PRs, rapid feedback</li>
+        </ul>
+      </div>
+    </section>
+    <hr class="m-0" />
+
+    <!-- Projects -->
+    <section class="resume-section" id="projects">
+      <div class="resume-section-content">
+        <h2 class="mb-5">Projects</h2>
+
+        <div class="mb-4">
+          <h3 class="h5 mb-1">Django Resume/Blog</h3>
+          <div class="text-muted mb-2">Django · SQLite · Bootstrap</div>
+          <p>Slug-based posts, static assets workflow, and image uploads. Deployed behind Nginx with systemd service for Gunicorn.</p>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="h5 mb-1">Node/Express Admin</h3>
+          <div class="text-muted mb-2">Node.js · Express · Pug/Handlebars</div>
+          <p>Product management CRUD with session auth, CSRF protection, and environment-based config via <code>.env</code>.</p>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="h5 mb-1">Arduino Sensors</h3>
+          <div class="text-muted mb-2">Arduino Uno/ESP32 · HC-SR04 · PIR · RGB LED</div>
+          <p>Distance/motion feedback with non-blocking loops and safe pin handling; serial logs for debugging.</p>
+        </div>
+      </div>
+    </section>
+    <hr class="m-0" />
+
+    <!-- Interests -->
+    <section class="resume-section" id="interests">
+      <div class="resume-section-content">
+        <h2 class="mb-5">Interests</h2>
+        <p>
+          Outdoors when I can; at the bench with sensors when I can’t. I enjoy exploring the overlap of UX research,
+          accessible design, and practical security on Linux servers.
+        </p>
+        <p class="mb-0">
+          Indoors: classic films, music theory, and lots of tinkering with Docker, Nginx, and databases.
+        </p>
+      </div>
+    </section>
+    <hr class="m-0" />
+
+    <!-- Awards -->
+    <section class="resume-section" id="awards">
+      <div class="resume-section-content">
+        <h2 class="mb-5">Awards & Certifications</h2>
+        <ul class="fa-ul mb-0">
+          <li><span class="fa-li"><i class="fa-solid fa-trophy text-warning"></i></span>SANS-style BYOD policy coursework (DeVry)</li>
+          <li><span class="fa-li"><i class="fa-solid fa-trophy text-warning"></i></span>Linux & Docker self-study milestones</li>
+          <li><span class="fa-li"><i class="fa-solid fa-trophy text-warning"></i></span>Customer-experience awards (Automotive)</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Bootstrap JS Bundle (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+
+  <!-- Core theme JS (optional; ensure this file exists) -->
+  <script src="{% static 'assets/js/scripts.js' %}"></script>
+</body>
+</html>
